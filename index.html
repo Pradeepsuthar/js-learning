@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        background-image: url('https://i.etsystatic.com/13367669/r/il/8adffe/1506815473/il_570xN.1506815473_lb94.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 27%;
+        height: 250px;
+        aspect-ratio: 16 / 9;
+        flex-grow: 1;
+        cursor: pointer;
+      }
+
+      .boxes {
+        display: flex;
+        gap: 0.5rem;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 10px;
+      }
+
+      .card {
+        margin: 20px;
+        max-width: 300px;
+        max-height: 120px;
+        background: #fff;
+        border: 1px solid #dededede;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      .lry {
+        line-height: 21px;
+        height: calc(3 * 21px);
+        overflow: hidden;
+        position: relative;
+      }
+
+      .lry::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 20px;
+        width: 75%;
+
+        background: linear-gradient(90deg, transparent, white);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <p class="lry">
+        Lorem Ipsum has been the industry's standard dummy text ever since the
+        1500s, when an unknown printer took a galley of type and scrambled it to
+        make a type .
+      </p>
+    </div>
+    <!-- <div class="boxes">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div> -->
+  </body>
+</html>
